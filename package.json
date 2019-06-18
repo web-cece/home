@@ -1,0 +1,24 @@
+{
+    "name": "home",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "home": "webpack"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/web-cece/home.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/web-cece/home/issues"
+    },
+    "homepage": "https://github.com/web-cece/home#readme",
+    "devDependencies": {
+        "webpack": "^4.34.0",
+        "webpack-cli": "^3.3.4"
+    }
+}
