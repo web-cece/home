@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>My Home</title>
+    <link href="./css/images/favicon.ico" rel="shortcut icon">
+    <link href="./css//swiper.min.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- 头部部分 -->
+        <div id="header" class="bom-spacing">
+            <!-- 导航栏 -->
+            <div id="nav">
+
+            </div>
+        </div>
+        <!-- 内容部分 -->
+        <div id="content" class="bom-spacing">
+            <!-- 主要内容部分 -->
+            <div id="swripe" class="bom-spacing">
+                <!-- 轮播图 -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- 如果需要滚动条 -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+            <div id="main">
+                <!-- 内容左部 -->
+                <div id="main-left">
+
+                </div>
+                <!-- 内容右部 -->
+                <div id="main-right">
+
+
+                </div>
+            </div>
+        </div>
+        <!-- 底部部分 -->
+        <div id="footer" class="bom-spacing">
+
+        </div>
+    </div>
+    <script>
+        $(".swiper-container").ready(function() {
+            var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+        })
+    </script>
+</body>
+
+</html>
